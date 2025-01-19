@@ -1,0 +1,63 @@
+---
+apiVersion: backstage.io/v1alpha1
+kind: Group
+metadata:
+  name: administrative-support
+  description: Administrative Support
+  spec:
+    type: department
+    parent: papliba-corp
+---
+# apiVersion: backstage.io/v1alpha1
+# kind: Group
+# metadata:
+#   name: operations-production
+#   description: Operations & Production
+#   spec:
+#     type: department
+#     parent: papliba-corp
+# ---
+# apiVersion: backstage.io/v1alpha1
+# kind: Group
+# metadata:
+#   name: technology-development
+#   description: Technology & Development
+#   spec:
+#     type: department
+#     parent: papliba-corp
+# ---
+# apiVersion: backstage.io/v1alpha1
+# kind: Group
+# metadata:
+#   name: sales-customer-relations
+#   description: Sales & Customer Relations
+#   spec:
+#     type: department
+#     parent: papliba-corp
+# ---
+# apiVersion: backstage.io/v1alpha1
+# kind: Group
+# metadata:
+#   name: marketing-communication
+#   description: Marketing & Communication
+#   spec:
+#     type: department
+#     parent: papliba-corp
+# ---
+# apiVersion: backstage.io/v1alpha1
+# kind: Group
+# metadata:
+#   name: strategic-business-development
+#   description: Strategic Business Development
+#   spec:
+#     type: department
+#     parent: papliba-corp
+# ---
+# apiVersion: backstage.io/v1alpha1
+# kind: Group
+# metadata:
+#   name: specialized-teams
+#   description: Specialized Teams
+#   spec:
+#     type: department
+#     parent: papliba-corp

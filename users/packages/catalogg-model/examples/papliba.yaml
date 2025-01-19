@@ -14,17 +14,8 @@ spec:
     displayName: Papliba Corp
     email: papliba@outlook.com
     picture: https://api.dicebear.com/7.x/identicon/svg?seed=Maggie&flip=true&backgroundColor=ffdfbf
-  children: [c-suite]
+  children: [c-suite, administrative-support, operations-production, technology-development, sales-customer-relations, marketing-communication, strategic-business-development, specialized-teams]
 ---
-
-apiVersion: backstage.io/v1alpha1
-kind: Location
-metadata:
-  name: groups
-  description: A collection of all Papliba Corp Groups
-spec:
-  targets:
-    - ./c-suite.yaml
 
 # apiVersion: backstage.io/v1alpha1
 # kind: Group

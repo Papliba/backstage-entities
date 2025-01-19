@@ -1,0 +1,10 @@
+---
+apiVersion: backstage.io/v1alpha1
+kind: Group
+metadata:
+  name: c-suite
+  description: C-Suite Executives
+spec:
+  type: department
+  parent: papliba-corp
+---
