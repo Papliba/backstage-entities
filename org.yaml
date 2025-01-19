@@ -1,0 +1,57 @@
+---
+
+apiVersion: backstage.io/v1alpha1
+kind: Group
+metadata:
+  name: papliba-corp
+  description: The papliba-corp organization
+  links:
+    - url: http://www.papliba.com/
+      title: Website
+    - url: https://meta.wikimedia.org/wiki/
+      title: Intranet
+spec:
+  type: organization
+  profile:
+    email: papliba@outlook.com
+    picture: https://api.dicebear.com/7.x/identicon/svg?seed=Maggie&flip=true&backgroundColor=ffdfbf
+  children: [dev]
+
+---
+apiVersion: backstage.io/v1alpha1
+kind: Group
+metadata:
+  name: dev
+  description: Development Team
+spec:
+  type: team
+  profile:
+    email: papliba@outlook.com
+    picture: https://api.dicebear.com/7.x/identicon/svg?seed=Fluffy&backgroundType=solid,gradientLinear&backgroundColor=ffd5dc,b6e3f4
+  parent: papliba-corp
+  children: []
+
+---
+apiVersion: backstage.io/v1alpha1
+kind: User
+metadata:
+  name: sunnybharne
+spec:
+  profile:
+    displayName: Sunny Bharne GitHub
+    email: sunny.bharne@outlook.com
+    picture: https://api.dicebear.com/7.x/avataaars/svg?seed=Luna&backgroundColor=transparent
+  memberOf: [dev]
+
+---
+apiVersion: backstage.io/v1alpha1
+kind: User
+metadata:
+  name: guest
+spec:
+  profile:
+    displayName: Guest User
+    email: guest@example.com
+  memberOf: [dev]
+---
+

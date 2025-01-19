@@ -1,0 +1,9 @@
+apiVersion: backstage.io/v1alpha1
+kind: Domain
+metadata:
+  name: shared-landing-zone
+  description: Shared landing zone domain
+spec:
+  owner: user:sunny.bharne
+  subdomainOf: audio
+  type: product-group

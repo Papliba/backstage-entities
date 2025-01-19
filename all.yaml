@@ -1,0 +1,14 @@
+apiVersion: backstage.io/v1alpha1
+kind: Location
+metadata:
+  name: all
+  description: A collection of all papliba entities
+spec:
+  targets:
+    - ./org.yaml
+    # - ./all-apis.yaml
+    # - ./all-components.yaml
+    # - ./all-domains.yaml
+    # - ./all-resources.yaml
+    # - ./all-systems.yaml
+    # - ./users/users.yaml
