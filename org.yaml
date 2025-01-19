@@ -16,297 +16,308 @@ spec:
     picture: https://api.dicebear.com/7.x/identicon/svg?seed=Maggie&flip=true&backgroundColor=ffdfbf
   children: [c-suite]
 ---
-apiVersion: backstage.io/v1alpha1
-kind: Group
-metadata:
-  name: c-suite
-  description: C-Suite Executives
-spec:
-  type: team
-  children: [ceo, cfo, coo, cto, chro, cmo]
----
-apiVersion: backstage.io/v1alpha1
-kind: Group
-metadata:
-  name: ceo
-  description: Chief Executive Officer
-spec:
-  type: role
----
-apiVersion: backstage.io/v1alpha1
-kind: Group
-metadata:
-  name: cfo
-  description: Chief Financial Officer
-spec:
-  type: role
----
-apiVersion: backstage.io/v1alpha1
-kind: Group
-metadata:
-  name: coo
-  description: Chief Operating Officer
-spec:
-  type: role
----
-apiVersion: backstage.io/v1alpha1
-kind: Group
-metadata:
-  name: cto
-  description: Chief Technology Officer
-spec:
-  type: role
----
-apiVersion: backstage.io/v1alpha1
-kind: Group
-metadata:
-  name: chro
-  description: Chief Human Resources Officer
-spec:
-  type: role
----
-apiVersion: backstage.io/v1alpha1
-kind: Group
-metadata:
-  name: cmo
-  description: Chief Marketing Officer
-spec:
-  type: role
----
-apiVersion: backstage.io/v1alpha1
-kind: Group
-metadata:
-  name: administrative-support
-  description: Administrative and Support Services
-spec:
-  type: department
-  children: [hr, finance, legal]
----
-apiVersion: backstage.io/v1alpha1
-kind: Group
-metadata:
-  name: operations-production
-  description: Operations and Production
-spec:
-  type: department
-  children: [supply-chain, logistics, quality-assurance]
----
-apiVersion: backstage.io/v1alpha1
-kind: Group
-metadata:
-  name: technology-development
-  description: Technology and Development
-spec:
-  type: department
-  children: [it, r-and-d]
----
-apiVersion: backstage.io/v1alpha1
-kind: Group
-metadata:
-  name: sales-customer-relations
-  description: Sales and Customer Relations
-spec:
-  type: department
-  children: [sales, customer-support, account-management]
----
-apiVersion: backstage.io/v1alpha1
-kind: Group
-metadata:
-  name: marketing-communication
-  description: Marketing and Communication
-spec:
-  type: department
-  children: [marketing, pr, corporate-communications]
----
-apiVersion: backstage.io/v1alpha1
-kind: Group
-metadata:
-  name: strategic-business-development
-  description: Strategic and Business Development
-spec:
-  type: department
-  children: [business-development, strategy]
----
-apiVersion: backstage.io/v1alpha1
-kind: Group
-metadata:
-  name: specialized-teams
-  description: Specialized Teams
-spec:
-  type: department
-  children: [data-analytics, esg, risk-management, ip-management]
----
-apiVersion: backstage.io/v1alpha1
-kind: Group
-metadata:
-  name: hr
-  description: Human Resources
-spec:
-  type: role
----
-apiVersion: backstage.io/v1alpha1
-kind: Group
-metadata:
-  name: finance
-  description: Finance Department
-spec:
-  type: role
----
-apiVersion: backstage.io/v1alpha1
-kind: Group
-metadata:
-  name: legal
-  description: Legal Department
-spec:
-  type: role
----
-apiVersion: backstage.io/v1alpha1
-kind: Group
-metadata:
-  name: supply-chain
-  description: Supply Chain Management
-spec:
-  type: role
----
-apiVersion: backstage.io/v1alpha1
-kind: Group
-metadata:
-  name: logistics
-  description: Logistics Department
-spec:
-  type: role
----
-apiVersion: backstage.io/v1alpha1
-kind: Group
-metadata:
-  name: quality-assurance
-  description: Quality Assurance Department
-spec:
-  type: role
----
-apiVersion: backstage.io/v1alpha1
-kind: Group
-metadata:
-  name: it
-  description: Information Technology
-spec:
-  type: role
----
-apiVersion: backstage.io/v1alpha1
-kind: Group
-metadata:
-  name: r-and-d
-  description: Research and Development
-spec:
-  type: role
----
-apiVersion: backstage.io/v1alpha1
-kind: Group
-metadata:
-  name: sales
-  description: Sales Department
-spec:
-  type: role
----
-apiVersion: backstage.io/v1alpha1
-kind: Group
-metadata:
-  name: customer-support
-  description: Customer Support
-spec:
-  type: role
----
-apiVersion: backstage.io/v1alpha1
-kind: Group
-metadata:
-  name: account-management
-  description: Account Management
-spec:
-  type: role
----
-apiVersion: backstage.io/v1alpha1
-kind: Group
-metadata:
-  name: marketing
-  description: Marketing Department
-spec:
-  type: role
----
-apiVersion: backstage.io/v1alpha1
-kind: Group
-metadata:
-  name: pr
-  description: Public Relations
-spec:
-  type: role
----
-apiVersion: backstage.io/v1alpha1
-kind: Group
-metadata:
-  name: corporate-communications
-  description: Corporate Communications
-spec:
-  type: role
----
-apiVersion: backstage.io/v1alpha1
-kind: Group
-metadata:
-  name: business-development
-  description: Business Development
-spec:
-  type: role
----
-apiVersion: backstage.io/v1alpha1
-kind: Group
-metadata:
-  name: strategy
-  description: Strategy Team
-spec:
-  type: role
----
-apiVersion: backstage.io/v1alpha1
-kind: Group
-metadata:
-  name: data-analytics
-  description: Data Analytics Team
-spec:
-  type: role
----
-apiVersion: backstage.io/v1alpha1
-kind: Group
-metadata:
-  name: esg
-  description: Environmental, Social, and Governance
-spec:
-  type: role
----
-apiVersion: backstage.io/v1alpha1
-kind: Group
-metadata:
-  name: risk-management
-  description: Risk Management Team
-spec:
-  type: role
----
-apiVersion: backstage.io/v1alpha1
-kind: Group
-metadata:
-  name: ip-management
-  description: Intellectual Property Management
-spec:
-  type: role
----
+
 apiVersion: backstage.io/v1alpha1
 kind: Location
 metadata:
-  name: papliba-groups
+  name: groups
   description: A collection of all Papliba Corp Groups
 spec:
   targets:
-    - ./administrative-support.yaml
-    - ./operations-production.yaml
-    - ./technology-development.yaml
-    - ./sales-customer-relations.yaml
-    - ./marketing-communication.yaml
-    - ./strategic-business-development.yaml
-    - ./specialized-teams.yaml
+    - ./c-suite.yaml
+
+# apiVersion: backstage.io/v1alpha1
+# kind: Group
+# metadata:
+#   name: c-suite
+#   description: C-Suite Executives
+# spec:
+#   type: user 
+#   children: [ceo, cfo, coo, cto, chro, cmo]
+# ---
+
+# apiVersion: backstage.io/v1alpha1
+# kind: Group
+# metadata:
+#   name: ceo
+#   description: Chief Executive Officer
+# spec:
+#   type: role
+# ---
+# apiVersion: backstage.io/v1alpha1
+# kind: Group
+# metadata:
+#   name: cfo
+#   description: Chief Financial Officer
+# spec:
+#   type: role
+# ---
+# apiVersion: backstage.io/v1alpha1
+# kind: Group
+# metadata:
+#   name: coo
+#   description: Chief Operating Officer
+# spec:
+#   type: role
+# ---
+# apiVersion: backstage.io/v1alpha1
+# kind: Group
+# metadata:
+#   name: cto
+#   description: Chief Technology Officer
+# spec:
+#   type: role
+# ---
+# apiVersion: backstage.io/v1alpha1
+# kind: Group
+# metadata:
+#   name: chro
+#   description: Chief Human Resources Officer
+# spec:
+#   type: role
+# ---
+# apiVersion: backstage.io/v1alpha1
+# kind: Group
+# metadata:
+#   name: cmo
+#   description: Chief Marketing Officer
+# spec:
+#   type: role
+# ---
+# apiVersion: backstage.io/v1alpha1
+# kind: Group
+# metadata:
+#   name: administrative-support
+#   description: Administrative and Support Services
+# spec:
+#   type: department
+#   children: [hr, finance, legal]
+# ---
+# apiVersion: backstage.io/v1alpha1
+# kind: Group
+# metadata:
+#   name: operations-production
+#   description: Operations and Production
+# spec:
+#   type: department
+#   children: [supply-chain, logistics, quality-assurance]
+# ---
+# apiVersion: backstage.io/v1alpha1
+# kind: Group
+# metadata:
+#   name: technology-development
+#   description: Technology and Development
+# spec:
+#   type: department
+#   children: [it, r-and-d]
+# ---
+# apiVersion: backstage.io/v1alpha1
+# kind: Group
+# metadata:
+#   name: sales-customer-relations
+#   description: Sales and Customer Relations
+# spec:
+#   type: department
+#   children: [sales, customer-support, account-management]
+# ---
+# apiVersion: backstage.io/v1alpha1
+# kind: Group
+# metadata:
+#   name: marketing-communication
+#   description: Marketing and Communication
+# spec:
+#   type: department
+#   children: [marketing, pr, corporate-communications]
+# ---
+# apiVersion: backstage.io/v1alpha1
+# kind: Group
+# metadata:
+#   name: strategic-business-development
+#   description: Strategic and Business Development
+# spec:
+#   type: department
+#   children: [business-development, strategy]
+# ---
+# apiVersion: backstage.io/v1alpha1
+# kind: Group
+# metadata:
+#   name: specialized-teams
+#   description: Specialized Teams
+# spec:
+#   type: department
+#   children: [data-analytics, esg, risk-management, ip-management]
+# ---
+# apiVersion: backstage.io/v1alpha1
+# kind: Group
+# metadata:
+#   name: hr
+#   description: Human Resources
+# spec:
+#   type: role
+# ---
+# apiVersion: backstage.io/v1alpha1
+# kind: Group
+# metadata:
+#   name: finance
+#   description: Finance Department
+# spec:
+#   type: role
+# ---
+# apiVersion: backstage.io/v1alpha1
+# kind: Group
+# metadata:
+#   name: legal
+#   description: Legal Department
+# spec:
+#   type: role
+# ---
+# apiVersion: backstage.io/v1alpha1
+# kind: Group
+# metadata:
+#   name: supply-chain
+#   description: Supply Chain Management
+# spec:
+#   type: role
+# ---
+# apiVersion: backstage.io/v1alpha1
+# kind: Group
+# metadata:
+#   name: logistics
+#   description: Logistics Department
+# spec:
+#   type: role
+# ---
+# apiVersion: backstage.io/v1alpha1
+# kind: Group
+# metadata:
+#   name: quality-assurance
+#   description: Quality Assurance Department
+# spec:
+#   type: role
+# ---
+# apiVersion: backstage.io/v1alpha1
+# kind: Group
+# metadata:
+#   name: it
+#   description: Information Technology
+# spec:
+#   type: role
+# ---
+# apiVersion: backstage.io/v1alpha1
+# kind: Group
+# metadata:
+#   name: r-and-d
+#   description: Research and Development
+# spec:
+#   type: role
+# ---
+# apiVersion: backstage.io/v1alpha1
+# kind: Group
+# metadata:
+#   name: sales
+#   description: Sales Department
+# spec:
+#   type: role
+# ---
+# apiVersion: backstage.io/v1alpha1
+# kind: Group
+# metadata:
+#   name: customer-support
+#   description: Customer Support
+# spec:
+#   type: role
+# ---
+# apiVersion: backstage.io/v1alpha1
+# kind: Group
+# metadata:
+#   name: account-management
+#   description: Account Management
+# spec:
+#   type: role
+# ---
+# apiVersion: backstage.io/v1alpha1
+# kind: Group
+# metadata:
+#   name: marketing
+#   description: Marketing Department
+# spec:
+#   type: role
+# ---
+# apiVersion: backstage.io/v1alpha1
+# kind: Group
+# metadata:
+#   name: pr
+#   description: Public Relations
+# spec:
+#   type: role
+# ---
+# apiVersion: backstage.io/v1alpha1
+# kind: Group
+# metadata:
+#   name: corporate-communications
+#   description: Corporate Communications
+# spec:
+#   type: role
+# ---
+# apiVersion: backstage.io/v1alpha1
+# kind: Group
+# metadata:
+#   name: business-development
+#   description: Business Development
+# spec:
+#   type: role
+# ---
+# apiVersion: backstage.io/v1alpha1
+# kind: Group
+# metadata:
+#   name: strategy
+#   description: Strategy Team
+# spec:
+#   type: role
+# ---
+# apiVersion: backstage.io/v1alpha1
+# kind: Group
+# metadata:
+#   name: data-analytics
+#   description: Data Analytics Team
+# spec:
+#   type: role
+# ---
+# apiVersion: backstage.io/v1alpha1
+# kind: Group
+# metadata:
+#   name: esg
+#   description: Environmental, Social, and Governance
+# spec:
+#   type: role
+# ---
+# apiVersion: backstage.io/v1alpha1
+# kind: Group
+# metadata:
+#   name: risk-management
+#   description: Risk Management Team
+# spec:
+#   type: role
+# ---
+# apiVersion: backstage.io/v1alpha1
+# kind: Group
+# metadata:
+#   name: ip-management
+#   description: Intellectual Property Management
+# spec:
+#   type: role
+# ---
+# # apiVersion: backstage.io/v1alpha1
+# # kind: Location
+# # metadata:
+# #   name: papliba-groups
+# #   description: A collection of all Papliba Corp Groups
+# # spec:
+# #   targets:
+# #     - ./administrative-support.yaml
+# #     - ./operations-production.yaml
+# #     - ./technology-development.yaml
+# #     - ./sales-customer-relations.yaml
+# #     - ./marketing-communication.yaml
+# #     - ./strategic-business-development.yaml
+# #     - ./specialized-teams.yaml
