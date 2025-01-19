@@ -1,0 +1,43 @@
+apiVersion: backstage.io/v1alpha1
+kind: Group
+metadata:
+  name: papliba-developers
+  description: Papliba Developers
+spec:
+  type: team
+  profile:
+    email: papliba@outlook.com
+    picture: https://api.dicebear.com/7.x/identicon/svg?seed=Fluffy&backgroundType=solid,gradientLinear&backgroundColor=ffd5dc,b6e3f4
+  parent: backstage
+  children: []
+---
+apiVersion: backstage.io/v1alpha1
+kind: User
+metadata:
+  name: sunnybharne
+spec:
+  profile:
+    email: sunny.bharne@outlook.com
+    picture: https://api.dicebear.com/7.x/avataaars/svg?seed=Luna&backgroundColor=transparent
+  memberOf: [papliba-developers]
+---
+apiVersion: backstage.io/v1alpha1
+kind: User
+metadata:
+  name: sunnybharne1
+spec:
+  profile:
+    email: sunny1.bharne@outlook.com
+    picture: https://api.dicebear.com/7.x/avataaars/svg?seed=Luna&backgroundColor=transparent
+  memberOf: [papliba-developers]
+---
+apiVersion: backstage.io/v1alpha1
+kind: User
+metadata:
+  name: sunnybharne2
+spec:
+  profile:
+    email: sunny2.bharne@outlook.com
+    picture: https://api.dicebear.com/7.x/avataaars/svg?seed=Luna&backgroundColor=transparent
+  memberOf: [papliba-developers]
+---

@@ -1,0 +1,8 @@
+apiVersion: backstage.io/v1alpha1
+kind: Domain
+metadata:
+  name: azure-landing-zones
+  title: azure-landing-zones
+  description: Azure Landing Zones is a collection of resources that are deployed and managed together.
+spec:
+  owner: sunnybharne

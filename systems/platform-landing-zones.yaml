@@ -1,0 +1,8 @@
+apiVersion: backstage.io/v1alpha1
+kind: System
+metadata:
+  name: platform-landing-zone
+  title: platform-landing-zone
+  description: Platform Landing Zone is a collection of resources that are deployed and managed together.
+spec:
+  owner: sunnybharne

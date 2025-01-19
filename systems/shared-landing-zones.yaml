@@ -1,0 +1,8 @@
+apiVersion: backstage.io/v1alpha1
+kind: System
+metadata:
+  name: shared-landing-zone
+  title: shared-landing-zone
+  description: Shared Landing Zones is a collection of resources that are deployed and managed together.
+spec:
+  owner: sunnybharne
